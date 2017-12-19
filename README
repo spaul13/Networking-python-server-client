@@ -1,0 +1,13 @@
+CS536 Project 1 by Sibendu Paul(paul90@purdue.edu)
+
+1. Features:
+	1) Multithreaded server: Main thread is to listen to TCP connections. Once accept(), server will build a thread to receive data from this new port.It can support single client as well as multiple clients.
+
+	2) Client: GET files, including html, txt, jpg, png, jpeg. Using HEAD command client can also get the header metainformation, which will be stored in the file_HEAD.txt in the Download subfolder.(content type, connection type and also indicate status of the connection). The Header information is also stored in the Download subfolder whenever we are getting 404 and 403 notifications.
+
+	3) Permissions for files in the server: When files are marked as "others" enable to read, permissions of clients are denied. 
+
+
+2. Run the project:
+	1) python server.py <server port>
+	2) python client.py <server name> <server port> <filename> <GET/HEAD>
